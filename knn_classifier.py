@@ -7,6 +7,7 @@ from torch.utils.data import DataLoader
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score
 import numpy as np
+import os                                           # For file path operations
 from tqdm import tqdm                               # To show a progress bar
 
 # Step 1: Definitions and Preparations
@@ -24,11 +25,17 @@ def load_pretrained_resnet18(model_path='best_resnet18_model.pth', num_classes=1
 
     # Get the number of input features for the classifier
     num_ftrs = model.fc.in_features
-    # Replace the final layer with one that matches your number of classes
-    model.fc = nn.Linear(num_ftrs, num_classes)
+    # The Sequential structure here needs to match your training script
+    model.fc = nn.Sequential(
+        nn.Dropout(0.5),
+        nn.Linear(num_ftrs, num_classes)
+    )
 
-    # Load the weights you saved from your training script
-    model.load_state_dict(torch.load(model_path, map_location=get_device()))
+    # Load the entire saved file, which is a dictionary (checkpoint) containing various places of data.
+    checkpoint = torch.load(model_path, map_location=get_device())
+
+    # Extract only the model's state dictionary (the weight) from the checkpoint.
+    model.load_state_dict(checkpoint['model_state_dict'])
 
     # Remove the final fully-connected layer to make it a feature extractor
     # We use nn.Identity() as a placeholder that does nothing
@@ -65,12 +72,18 @@ def extract_features(dataloader, model):
 # Step 3: Main Execution Flow
 def main():
     # Main function to orchestrate all steps.
+
+    # Get the base directory of the script
+    # Instead of using a relative path like './', we construct an absolute path based on the current script location.
+    # This ensures that no matter what folder you run the script from, it will always find the correct file.
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+
     # !! IMPORTANT !!
     # Define the path to your dataset and the number of classes you have.
     # The dataset should be structured.
-    DATASET_PATH = './datasets'
+    DATASET_PATH = os.path.join(base_dir, 'dataset')                                        # Adjust this path to your dataset location
     NUM_CLASSES = 2
-    MODEL_PATH = './resnet18_checkpoint/best_resnet18_model.pth'
+    MODEL_PATH = os.path.join(base_dir, 'resnet18_checkpoint', 'best_resnet18_model.pth')   # Path to the model checkpoint
 
     # 1. Load the model
     print("Loading ResNet18 feature extractor model...")
@@ -86,8 +99,8 @@ def main():
 
     print("Loading custom dataset...")
     # Load the train and validate sets using ImageFolder
-    train_dataset = datasets.ImageFolder(root=f'{DATASET_PATH}/train', transform=transform)
-    test_dataset = datasets.ImageFolder(root=f'{DATASET_PATH}/test', transform=transform)
+    train_dataset = datasets.ImageFolder(root=f'{DATASET_PATH}/Training', transform=transform)
+    test_dataset = datasets.ImageFolder(root=f'{DATASET_PATH}/Validation', transform=transform)
 
     # Create DataLoaders
     # Adjust batch_size based on your hardware's capability
