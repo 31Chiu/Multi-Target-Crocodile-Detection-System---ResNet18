@@ -12,11 +12,11 @@ import logging
 from tqdm import tqdm                               # To show a progress bar
 
 logging.basicConfig(
-    level=logging.INFO,                                                 # 
-    format='%(asctime)s - %(levelname)s - %(message)s',                 # 
+    level=logging.INFO,                                                 # Set the logging level to INFO
+    format='%(asctime)s - %(levelname)s - %(message)s',                 # Define the log message format
     handlers=[
-        logging.FileHandler('knn_classifier.log', encoding='utf-8'),    # 
-        logging.StreamHandler()                                         # 
+        logging.FileHandler('knn_classifier.log', encoding='utf-8'),    # Log messages to a file named 'knn_classifier.log'
+        logging.StreamHandler()                                         # Also log messages to the console
     ]
 )
 
