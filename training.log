@@ -1,0 +1,237 @@
+2025-08-18 21:59:10,112 - INFO - Using GPU: NVIDIA GeForce RTX 3060
+2025-08-18 21:59:10,113 - INFO - Available GPU memory: 12.00 GB
+2025-08-18 21:59:10,113 - INFO - Starting ResNet18 training...
+2025-08-18 21:59:10,134 - INFO - Number of classes: 2
+2025-08-18 21:59:10,134 - INFO - Class names: ['crocodile', 'non-crocodile']
+2025-08-18 21:59:10,134 - INFO - Number of training samples: 4190
+2025-08-18 21:59:10,135 - INFO - Number of validation samples: 2625
+2025-08-18 21:59:10,596 - INFO - Starting training - Using device: cuda
+2025-08-18 21:59:10,596 - INFO - Total training epochs: 50
+2025-08-18 21:59:44,302 - INFO - Epoch 1/50 | Train Loss: 0.2143 Acc: 0.8993 | Val Loss: 0.0870 Acc: 0.9710
+2025-08-18 21:59:44,386 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_215944_acc_0.9710.pth
+2025-08-18 21:59:44,456 - INFO - Best model updated: resnet18_checkpoint\best_resnet18_model.pth
+2025-08-18 22:00:14,654 - INFO - Epoch 2/50 | Train Loss: 0.0909 Acc: 0.9675 | Val Loss: 0.0768 Acc: 0.9710
+2025-08-18 22:00:14,729 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_220014_acc_0.9710.pth
+2025-08-18 22:00:44,963 - INFO - Epoch 3/50 | Train Loss: 0.0833 Acc: 0.9723 | Val Loss: 0.0611 Acc: 0.9771
+2025-08-18 22:00:45,035 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_220044_acc_0.9771.pth
+2025-08-18 22:00:45,111 - INFO - Best model updated: resnet18_checkpoint\best_resnet18_model.pth
+2025-08-18 22:01:15,387 - INFO - Epoch 4/50 | Train Loss: 0.0750 Acc: 0.9704 | Val Loss: 0.0663 Acc: 0.9764
+2025-08-18 22:01:15,459 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_220115_acc_0.9764.pth
+2025-08-18 22:01:45,938 - INFO - Epoch 5/50 | Train Loss: 0.0635 Acc: 0.9771 | Val Loss: 0.0731 Acc: 0.9752
+2025-08-18 22:01:46,012 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_220145_acc_0.9752.pth
+2025-08-18 22:02:16,296 - INFO - Epoch 6/50 | Train Loss: 0.0691 Acc: 0.9730 | Val Loss: 0.0570 Acc: 0.9813
+2025-08-18 22:02:16,372 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_220216_acc_0.9813.pth
+2025-08-18 22:02:16,449 - INFO - Best model updated: resnet18_checkpoint\best_resnet18_model.pth
+2025-08-18 22:02:46,660 - INFO - Epoch 7/50 | Train Loss: 0.0565 Acc: 0.9783 | Val Loss: 0.0507 Acc: 0.9844
+2025-08-18 22:02:46,733 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_220246_acc_0.9844.pth
+2025-08-18 22:02:46,810 - INFO - Best model updated: resnet18_checkpoint\best_resnet18_model.pth
+2025-08-18 22:03:17,167 - INFO - Epoch 8/50 | Train Loss: 0.0498 Acc: 0.9823 | Val Loss: 0.0689 Acc: 0.9794
+2025-08-18 22:03:17,240 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_220317_acc_0.9794.pth
+2025-08-18 22:03:47,407 - INFO - Epoch 9/50 | Train Loss: 0.0456 Acc: 0.9850 | Val Loss: 0.0618 Acc: 0.9802
+2025-08-18 22:03:47,479 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_220347_acc_0.9802.pth
+2025-08-18 22:04:17,647 - INFO - Epoch 10/50 | Train Loss: 0.0618 Acc: 0.9771 | Val Loss: 0.0556 Acc: 0.9829
+2025-08-18 22:04:17,729 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_220417_acc_0.9829.pth
+2025-08-18 22:04:47,923 - INFO - Epoch 11/50 | Train Loss: 0.0437 Acc: 0.9840 | Val Loss: 0.0527 Acc: 0.9840
+2025-08-18 22:04:47,996 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_220447_acc_0.9840.pth
+2025-08-18 22:05:18,824 - INFO - Epoch 12/50 | Train Loss: 0.0340 Acc: 0.9888 | Val Loss: 0.0526 Acc: 0.9836
+2025-08-18 22:05:18,898 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_220518_acc_0.9836.pth
+2025-08-18 22:05:53,400 - INFO - Epoch 13/50 | Train Loss: 0.0492 Acc: 0.9828 | Val Loss: 0.0551 Acc: 0.9840
+2025-08-18 22:05:53,477 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_220553_acc_0.9840.pth
+2025-08-18 22:06:23,824 - INFO - Epoch 14/50 | Train Loss: 0.0491 Acc: 0.9809 | Val Loss: 0.0540 Acc: 0.9848
+2025-08-18 22:06:23,900 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_220623_acc_0.9848.pth
+2025-08-18 22:06:23,980 - INFO - Best model updated: resnet18_checkpoint\best_resnet18_model.pth
+2025-08-18 22:06:53,915 - INFO - Epoch 15/50 | Train Loss: 0.0494 Acc: 0.9804 | Val Loss: 0.0541 Acc: 0.9836
+2025-08-18 22:06:53,989 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_220653_acc_0.9836.pth
+2025-08-18 22:07:25,090 - INFO - Epoch 16/50 | Train Loss: 0.0408 Acc: 0.9854 | Val Loss: 0.0541 Acc: 0.9844
+2025-08-18 22:07:25,160 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_220725_acc_0.9844.pth
+2025-08-18 22:07:57,147 - INFO - Epoch 17/50 | Train Loss: 0.0428 Acc: 0.9823 | Val Loss: 0.0506 Acc: 0.9855
+2025-08-18 22:07:57,218 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_220757_acc_0.9855.pth
+2025-08-18 22:07:57,293 - INFO - Best model updated: resnet18_checkpoint\best_resnet18_model.pth
+2025-08-18 22:08:33,588 - INFO - Epoch 18/50 | Train Loss: 0.0402 Acc: 0.9852 | Val Loss: 0.0503 Acc: 0.9859
+2025-08-18 22:08:33,707 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_220833_acc_0.9859.pth
+2025-08-18 22:08:33,874 - INFO - Best model updated: resnet18_checkpoint\best_resnet18_model.pth
+2025-08-18 22:09:03,961 - INFO - Epoch 19/50 | Train Loss: 0.0347 Acc: 0.9859 | Val Loss: 0.0522 Acc: 0.9848
+2025-08-18 22:09:04,035 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_220903_acc_0.9848.pth
+2025-08-18 22:09:33,746 - INFO - Epoch 20/50 | Train Loss: 0.0383 Acc: 0.9838 | Val Loss: 0.0508 Acc: 0.9848
+2025-08-18 22:09:33,818 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_220933_acc_0.9848.pth
+2025-08-18 22:10:04,230 - INFO - Epoch 21/50 | Train Loss: 0.0425 Acc: 0.9840 | Val Loss: 0.0476 Acc: 0.9867
+2025-08-18 22:10:04,302 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_221004_acc_0.9867.pth
+2025-08-18 22:10:04,379 - INFO - Best model updated: resnet18_checkpoint\best_resnet18_model.pth
+2025-08-18 22:10:35,082 - INFO - Epoch 22/50 | Train Loss: 0.0343 Acc: 0.9854 | Val Loss: 0.0474 Acc: 0.9867
+2025-08-18 22:10:35,155 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_221035_acc_0.9867.pth
+2025-08-18 22:11:05,449 - INFO - Epoch 23/50 | Train Loss: 0.0376 Acc: 0.9847 | Val Loss: 0.0512 Acc: 0.9851
+2025-08-18 22:11:05,524 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_221105_acc_0.9851.pth
+2025-08-18 22:11:35,627 - INFO - Epoch 24/50 | Train Loss: 0.0378 Acc: 0.9874 | Val Loss: 0.0521 Acc: 0.9844
+2025-08-18 22:11:35,697 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_221135_acc_0.9844.pth
+2025-08-18 22:12:06,116 - INFO - Epoch 25/50 | Train Loss: 0.0503 Acc: 0.9828 | Val Loss: 0.0504 Acc: 0.9855
+2025-08-18 22:12:06,195 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_221206_acc_0.9855.pth
+2025-08-18 22:12:36,522 - INFO - Epoch 26/50 | Train Loss: 0.0468 Acc: 0.9831 | Val Loss: 0.0515 Acc: 0.9851
+2025-08-18 22:12:36,599 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_221236_acc_0.9851.pth
+2025-08-18 22:13:07,078 - INFO - Epoch 27/50 | Train Loss: 0.0324 Acc: 0.9909 | Val Loss: 0.0503 Acc: 0.9859
+2025-08-18 22:13:07,150 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_221307_acc_0.9859.pth
+2025-08-18 22:13:37,490 - INFO - Epoch 28/50 | Train Loss: 0.0390 Acc: 0.9862 | Val Loss: 0.0490 Acc: 0.9870
+2025-08-18 22:13:37,564 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_221337_acc_0.9870.pth
+2025-08-18 22:13:37,640 - INFO - Best model updated: resnet18_checkpoint\best_resnet18_model.pth
+2025-08-18 22:14:08,662 - INFO - Epoch 29/50 | Train Loss: 0.0334 Acc: 0.9876 | Val Loss: 0.0521 Acc: 0.9859
+2025-08-18 22:14:08,740 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_221408_acc_0.9859.pth
+2025-08-18 22:14:39,663 - INFO - Epoch 30/50 | Train Loss: 0.0373 Acc: 0.9852 | Val Loss: 0.0502 Acc: 0.9859
+2025-08-18 22:14:39,739 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_221439_acc_0.9859.pth
+2025-08-18 22:15:17,205 - INFO - Epoch 31/50 | Train Loss: 0.0407 Acc: 0.9862 | Val Loss: 0.0521 Acc: 0.9851
+2025-08-18 22:15:17,338 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_221517_acc_0.9851.pth
+2025-08-18 22:15:48,743 - INFO - Epoch 32/50 | Train Loss: 0.0384 Acc: 0.9850 | Val Loss: 0.0492 Acc: 0.9867
+2025-08-18 22:15:48,829 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_221548_acc_0.9867.pth
+2025-08-18 22:16:19,330 - INFO - Epoch 33/50 | Train Loss: 0.0414 Acc: 0.9828 | Val Loss: 0.0510 Acc: 0.9855
+2025-08-18 22:16:19,403 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_221619_acc_0.9855.pth
+2025-08-18 22:16:49,519 - INFO - Epoch 34/50 | Train Loss: 0.0380 Acc: 0.9859 | Val Loss: 0.0593 Acc: 0.9810
+2025-08-18 22:16:49,590 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_221649_acc_0.9810.pth
+2025-08-18 22:17:24,715 - INFO - Epoch 35/50 | Train Loss: 0.0359 Acc: 0.9876 | Val Loss: 0.0604 Acc: 0.9810
+2025-08-18 22:17:24,854 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_221724_acc_0.9810.pth
+2025-08-18 22:17:55,333 - INFO - Epoch 36/50 | Train Loss: 0.0356 Acc: 0.9864 | Val Loss: 0.0513 Acc: 0.9855
+2025-08-18 22:17:55,409 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_221755_acc_0.9855.pth
+2025-08-18 22:18:25,724 - INFO - Epoch 37/50 | Train Loss: 0.0417 Acc: 0.9842 | Val Loss: 0.0497 Acc: 0.9851
+2025-08-18 22:18:25,795 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_221825_acc_0.9851.pth
+2025-08-18 22:18:56,310 - INFO - Epoch 38/50 | Train Loss: 0.0308 Acc: 0.9909 | Val Loss: 0.0568 Acc: 0.9825
+2025-08-18 22:18:56,382 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_221856_acc_0.9825.pth
+2025-08-18 22:19:26,921 - INFO - Epoch 39/50 | Train Loss: 0.0358 Acc: 0.9881 | Val Loss: 0.0509 Acc: 0.9859
+2025-08-18 22:19:26,993 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_221926_acc_0.9859.pth
+2025-08-18 22:19:57,248 - INFO - Epoch 40/50 | Train Loss: 0.0355 Acc: 0.9857 | Val Loss: 0.0510 Acc: 0.9851
+2025-08-18 22:19:57,320 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_221957_acc_0.9851.pth
+2025-08-18 22:20:27,481 - INFO - Epoch 41/50 | Train Loss: 0.0369 Acc: 0.9852 | Val Loss: 0.0537 Acc: 0.9840
+2025-08-18 22:20:27,554 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_222027_acc_0.9840.pth
+2025-08-18 22:20:57,748 - INFO - Epoch 42/50 | Train Loss: 0.0388 Acc: 0.9857 | Val Loss: 0.0487 Acc: 0.9870
+2025-08-18 22:20:57,823 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_222057_acc_0.9870.pth
+2025-08-18 22:21:28,079 - INFO - Epoch 43/50 | Train Loss: 0.0396 Acc: 0.9850 | Val Loss: 0.0526 Acc: 0.9848
+2025-08-18 22:21:28,153 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_222128_acc_0.9848.pth
+2025-08-18 22:21:58,678 - INFO - Epoch 44/50 | Train Loss: 0.0363 Acc: 0.9878 | Val Loss: 0.0500 Acc: 0.9851
+2025-08-18 22:21:58,751 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_222158_acc_0.9851.pth
+2025-08-18 22:22:29,069 - INFO - Epoch 45/50 | Train Loss: 0.0369 Acc: 0.9871 | Val Loss: 0.0513 Acc: 0.9851
+2025-08-18 22:22:29,141 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_222229_acc_0.9851.pth
+2025-08-18 22:22:59,381 - INFO - Epoch 46/50 | Train Loss: 0.0359 Acc: 0.9866 | Val Loss: 0.0508 Acc: 0.9859
+2025-08-18 22:22:59,452 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_222259_acc_0.9859.pth
+2025-08-18 22:23:29,720 - INFO - Epoch 47/50 | Train Loss: 0.0399 Acc: 0.9831 | Val Loss: 0.0536 Acc: 0.9844
+2025-08-18 22:23:29,799 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_222329_acc_0.9844.pth
+2025-08-18 22:24:00,056 - INFO - Epoch 48/50 | Train Loss: 0.0381 Acc: 0.9871 | Val Loss: 0.0523 Acc: 0.9855
+2025-08-18 22:24:00,129 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_222400_acc_0.9855.pth
+2025-08-18 22:24:30,474 - INFO - Epoch 49/50 | Train Loss: 0.0381 Acc: 0.9842 | Val Loss: 0.0542 Acc: 0.9848
+2025-08-18 22:24:30,548 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_222430_acc_0.9848.pth
+2025-08-18 22:25:01,481 - INFO - Epoch 50/50 | Train Loss: 0.0322 Acc: 0.9874 | Val Loss: 0.0500 Acc: 0.9867
+2025-08-18 22:25:01,553 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250818_222501_acc_0.9867.pth
+2025-08-18 22:25:01,553 - INFO - Training completed! Best validation accuracy: 0.9870
+2025-08-18 22:25:01,553 - INFO - ResNet18 training completed.
+2025-08-19 15:50:32,629 - INFO - Using GPU: NVIDIA GeForce RTX 3060
+2025-08-19 15:50:32,629 - INFO - Available GPU memory: 12.00 GB
+2025-08-19 15:50:32,629 - INFO - Starting ResNet18 training...
+2025-08-19 15:50:32,652 - INFO - Number of classes: 2
+2025-08-19 15:50:32,652 - INFO - Class names: ['crocodile', 'non-crocodile']
+2025-08-19 15:50:32,652 - INFO - Number of training samples: 4190
+2025-08-19 15:50:32,652 - INFO - Number of validation samples: 2625
+2025-08-19 15:50:32,912 - INFO - Starting training - Using device: cuda
+2025-08-19 15:50:32,912 - INFO - Total training epochs: 50
+2025-08-19 15:51:04,712 - INFO - Epoch 1/50 | Train Loss: 0.2143 Acc: 0.8993 | Val Loss: 0.0866 Acc: 0.9699
+2025-08-19 15:51:04,801 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_155104_acc_0.9699.pth
+2025-08-19 15:51:04,868 - INFO - Best model updated: resnet18_checkpoint\best_resnet18_model.pth
+2025-08-19 15:51:34,676 - INFO - Epoch 2/50 | Train Loss: 0.0897 Acc: 0.9661 | Val Loss: 0.0775 Acc: 0.9718
+2025-08-19 15:51:34,745 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_155134_acc_0.9718.pth
+2025-08-19 15:51:34,826 - INFO - Best model updated: resnet18_checkpoint\best_resnet18_model.pth
+2025-08-19 15:52:04,457 - INFO - Epoch 3/50 | Train Loss: 0.0837 Acc: 0.9706 | Val Loss: 0.0609 Acc: 0.9787
+2025-08-19 15:52:04,529 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_155204_acc_0.9787.pth
+2025-08-19 15:52:04,610 - INFO - Best model updated: resnet18_checkpoint\best_resnet18_model.pth
+2025-08-19 15:52:34,609 - INFO - Epoch 4/50 | Train Loss: 0.0757 Acc: 0.9709 | Val Loss: 0.0668 Acc: 0.9764
+2025-08-19 15:52:34,687 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_155234_acc_0.9764.pth
+2025-08-19 15:53:04,851 - INFO - Epoch 5/50 | Train Loss: 0.0647 Acc: 0.9771 | Val Loss: 0.0652 Acc: 0.9806
+2025-08-19 15:53:04,925 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_155304_acc_0.9806.pth
+2025-08-19 15:53:05,008 - INFO - Best model updated: resnet18_checkpoint\best_resnet18_model.pth
+2025-08-19 15:53:34,839 - INFO - Epoch 6/50 | Train Loss: 0.0684 Acc: 0.9740 | Val Loss: 0.0577 Acc: 0.9825
+2025-08-19 15:53:34,923 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_155334_acc_0.9825.pth
+2025-08-19 15:53:35,000 - INFO - Best model updated: resnet18_checkpoint\best_resnet18_model.pth
+2025-08-19 15:54:04,709 - INFO - Epoch 7/50 | Train Loss: 0.0583 Acc: 0.9749 | Val Loss: 0.0487 Acc: 0.9867
+2025-08-19 15:54:04,787 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_155404_acc_0.9867.pth
+2025-08-19 15:54:04,874 - INFO - Best model updated: resnet18_checkpoint\best_resnet18_model.pth
+2025-08-19 15:54:34,613 - INFO - Epoch 8/50 | Train Loss: 0.0493 Acc: 0.9821 | Val Loss: 0.0695 Acc: 0.9790
+2025-08-19 15:54:34,678 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_155434_acc_0.9790.pth
+2025-08-19 15:55:04,766 - INFO - Epoch 9/50 | Train Loss: 0.0466 Acc: 0.9831 | Val Loss: 0.0618 Acc: 0.9798
+2025-08-19 15:55:04,836 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_155504_acc_0.9798.pth
+2025-08-19 15:55:34,935 - INFO - Epoch 10/50 | Train Loss: 0.0593 Acc: 0.9785 | Val Loss: 0.0566 Acc: 0.9813
+2025-08-19 15:55:35,020 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_155534_acc_0.9813.pth
+2025-08-19 15:56:05,958 - INFO - Epoch 11/50 | Train Loss: 0.0442 Acc: 0.9828 | Val Loss: 0.0526 Acc: 0.9848
+2025-08-19 15:56:06,032 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_155605_acc_0.9848.pth
+2025-08-19 15:56:36,877 - INFO - Epoch 12/50 | Train Loss: 0.0337 Acc: 0.9890 | Val Loss: 0.0530 Acc: 0.9851
+2025-08-19 15:56:36,950 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_155636_acc_0.9851.pth
+2025-08-19 15:57:13,219 - INFO - Epoch 13/50 | Train Loss: 0.0478 Acc: 0.9833 | Val Loss: 0.0569 Acc: 0.9821
+2025-08-19 15:57:13,307 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_155713_acc_0.9821.pth
+2025-08-19 15:57:44,532 - INFO - Epoch 14/50 | Train Loss: 0.0486 Acc: 0.9823 | Val Loss: 0.0557 Acc: 0.9836
+2025-08-19 15:57:44,612 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_155744_acc_0.9836.pth
+2025-08-19 15:58:15,544 - INFO - Epoch 15/50 | Train Loss: 0.0502 Acc: 0.9809 | Val Loss: 0.0554 Acc: 0.9844
+2025-08-19 15:58:15,626 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_155815_acc_0.9844.pth
+2025-08-19 15:58:47,046 - INFO - Epoch 16/50 | Train Loss: 0.0405 Acc: 0.9850 | Val Loss: 0.0575 Acc: 0.9836
+2025-08-19 15:58:47,118 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_155847_acc_0.9836.pth
+2025-08-19 15:59:18,203 - INFO - Epoch 17/50 | Train Loss: 0.0434 Acc: 0.9816 | Val Loss: 0.0532 Acc: 0.9844
+2025-08-19 15:59:18,275 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_155918_acc_0.9844.pth
+2025-08-19 15:59:49,157 - INFO - Epoch 18/50 | Train Loss: 0.0396 Acc: 0.9857 | Val Loss: 0.0538 Acc: 0.9851
+2025-08-19 15:59:49,234 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_155949_acc_0.9851.pth
+2025-08-19 16:00:20,223 - INFO - Epoch 19/50 | Train Loss: 0.0362 Acc: 0.9862 | Val Loss: 0.0581 Acc: 0.9813
+2025-08-19 16:00:20,309 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_160020_acc_0.9813.pth
+2025-08-19 16:00:50,689 - INFO - Epoch 20/50 | Train Loss: 0.0403 Acc: 0.9840 | Val Loss: 0.0562 Acc: 0.9825
+2025-08-19 16:00:50,763 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_160050_acc_0.9825.pth
+2025-08-19 16:01:21,564 - INFO - Epoch 21/50 | Train Loss: 0.0444 Acc: 0.9838 | Val Loss: 0.0529 Acc: 0.9844
+2025-08-19 16:01:21,637 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_160121_acc_0.9844.pth
+2025-08-19 16:01:53,136 - INFO - Epoch 22/50 | Train Loss: 0.0353 Acc: 0.9859 | Val Loss: 0.0523 Acc: 0.9851
+2025-08-19 16:01:53,213 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_160153_acc_0.9851.pth
+2025-08-19 16:02:24,461 - INFO - Epoch 23/50 | Train Loss: 0.0396 Acc: 0.9850 | Val Loss: 0.0570 Acc: 0.9825
+2025-08-19 16:02:24,531 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_160224_acc_0.9825.pth
+2025-08-19 16:02:55,775 - INFO - Epoch 24/50 | Train Loss: 0.0402 Acc: 0.9857 | Val Loss: 0.0557 Acc: 0.9829
+2025-08-19 16:02:55,849 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_160255_acc_0.9829.pth
+2025-08-19 16:03:27,101 - INFO - Epoch 25/50 | Train Loss: 0.0519 Acc: 0.9845 | Val Loss: 0.0543 Acc: 0.9840
+2025-08-19 16:03:27,167 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_160327_acc_0.9840.pth
+2025-08-19 16:03:58,169 - INFO - Epoch 26/50 | Train Loss: 0.0513 Acc: 0.9790 | Val Loss: 0.0556 Acc: 0.9825
+2025-08-19 16:03:58,245 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_160358_acc_0.9825.pth
+2025-08-19 16:04:29,629 - INFO - Epoch 27/50 | Train Loss: 0.0340 Acc: 0.9885 | Val Loss: 0.0546 Acc: 0.9832
+2025-08-19 16:04:29,710 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_160429_acc_0.9832.pth
+2025-08-19 16:05:01,095 - INFO - Epoch 28/50 | Train Loss: 0.0410 Acc: 0.9847 | Val Loss: 0.0519 Acc: 0.9844
+2025-08-19 16:05:01,174 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_160501_acc_0.9844.pth
+2025-08-19 16:05:32,321 - INFO - Epoch 29/50 | Train Loss: 0.0367 Acc: 0.9852 | Val Loss: 0.0567 Acc: 0.9829
+2025-08-19 16:05:32,400 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_160532_acc_0.9829.pth
+2025-08-19 16:06:03,492 - INFO - Epoch 30/50 | Train Loss: 0.0406 Acc: 0.9847 | Val Loss: 0.0539 Acc: 0.9836
+2025-08-19 16:06:03,571 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_160603_acc_0.9836.pth
+2025-08-19 16:06:34,865 - INFO - Epoch 31/50 | Train Loss: 0.0455 Acc: 0.9847 | Val Loss: 0.0564 Acc: 0.9832
+2025-08-19 16:06:34,942 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_160634_acc_0.9832.pth
+2025-08-19 16:07:06,102 - INFO - Epoch 32/50 | Train Loss: 0.0420 Acc: 0.9835 | Val Loss: 0.0525 Acc: 0.9848
+2025-08-19 16:07:06,167 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_160706_acc_0.9848.pth
+2025-08-19 16:07:37,272 - INFO - Epoch 33/50 | Train Loss: 0.0444 Acc: 0.9821 | Val Loss: 0.0545 Acc: 0.9832
+2025-08-19 16:07:37,339 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_160737_acc_0.9832.pth
+2025-08-19 16:08:08,317 - INFO - Epoch 34/50 | Train Loss: 0.0406 Acc: 0.9859 | Val Loss: 0.0650 Acc: 0.9806
+2025-08-19 16:08:08,397 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_160808_acc_0.9806.pth
+2025-08-19 16:08:39,649 - INFO - Epoch 35/50 | Train Loss: 0.0394 Acc: 0.9854 | Val Loss: 0.0658 Acc: 0.9810
+2025-08-19 16:08:39,735 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_160839_acc_0.9810.pth
+2025-08-19 16:09:10,968 - INFO - Epoch 36/50 | Train Loss: 0.0376 Acc: 0.9864 | Val Loss: 0.0550 Acc: 0.9840
+2025-08-19 16:09:11,039 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_160910_acc_0.9840.pth
+2025-08-19 16:09:42,155 - INFO - Epoch 37/50 | Train Loss: 0.0454 Acc: 0.9826 | Val Loss: 0.0539 Acc: 0.9836
+2025-08-19 16:09:42,238 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_160942_acc_0.9836.pth
+2025-08-19 16:10:13,489 - INFO - Epoch 38/50 | Train Loss: 0.0333 Acc: 0.9881 | Val Loss: 0.0616 Acc: 0.9817
+2025-08-19 16:10:13,569 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_161013_acc_0.9817.pth
+2025-08-19 16:10:43,900 - INFO - Epoch 39/50 | Train Loss: 0.0376 Acc: 0.9859 | Val Loss: 0.0548 Acc: 0.9844
+2025-08-19 16:10:43,981 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_161043_acc_0.9844.pth
+2025-08-19 16:11:13,522 - INFO - Epoch 40/50 | Train Loss: 0.0397 Acc: 0.9833 | Val Loss: 0.0550 Acc: 0.9829
+2025-08-19 16:11:13,592 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_161113_acc_0.9829.pth
+2025-08-19 16:11:43,267 - INFO - Epoch 41/50 | Train Loss: 0.0412 Acc: 0.9823 | Val Loss: 0.0583 Acc: 0.9821
+2025-08-19 16:11:43,337 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_161143_acc_0.9821.pth
+2025-08-19 16:12:13,105 - INFO - Epoch 42/50 | Train Loss: 0.0407 Acc: 0.9847 | Val Loss: 0.0522 Acc: 0.9851
+2025-08-19 16:12:13,176 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_161213_acc_0.9851.pth
+2025-08-19 16:12:42,742 - INFO - Epoch 43/50 | Train Loss: 0.0428 Acc: 0.9831 | Val Loss: 0.0568 Acc: 0.9832
+2025-08-19 16:12:42,825 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_161242_acc_0.9832.pth
+2025-08-19 16:13:12,991 - INFO - Epoch 44/50 | Train Loss: 0.0414 Acc: 0.9840 | Val Loss: 0.0541 Acc: 0.9840
+2025-08-19 16:13:13,062 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_161312_acc_0.9840.pth
+2025-08-19 16:13:42,972 - INFO - Epoch 45/50 | Train Loss: 0.0391 Acc: 0.9852 | Val Loss: 0.0556 Acc: 0.9829
+2025-08-19 16:13:43,046 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_161342_acc_0.9829.pth
+2025-08-19 16:14:12,838 - INFO - Epoch 46/50 | Train Loss: 0.0393 Acc: 0.9866 | Val Loss: 0.0546 Acc: 0.9832
+2025-08-19 16:14:12,910 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_161412_acc_0.9832.pth
+2025-08-19 16:14:42,925 - INFO - Epoch 47/50 | Train Loss: 0.0426 Acc: 0.9845 | Val Loss: 0.0577 Acc: 0.9821
+2025-08-19 16:14:43,003 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_161442_acc_0.9821.pth
+2025-08-19 16:15:13,324 - INFO - Epoch 48/50 | Train Loss: 0.0411 Acc: 0.9850 | Val Loss: 0.0557 Acc: 0.9821
+2025-08-19 16:15:13,402 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_161513_acc_0.9821.pth
+2025-08-19 16:15:44,574 - INFO - Epoch 49/50 | Train Loss: 0.0419 Acc: 0.9833 | Val Loss: 0.0592 Acc: 0.9821
+2025-08-19 16:15:44,637 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_161544_acc_0.9821.pth
+2025-08-19 16:16:15,494 - INFO - Epoch 50/50 | Train Loss: 0.0356 Acc: 0.9871 | Val Loss: 0.0529 Acc: 0.9844
+2025-08-19 16:16:15,574 - INFO - Model saved: resnet18_checkpoint\resnet18_checkpoint_20250819_161615_acc_0.9844.pth
+2025-08-19 16:16:15,574 - INFO - Training completed! Best validation accuracy: 0.9867
+2025-08-19 16:16:15,574 - INFO - ResNet18 training completed.
