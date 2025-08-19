@@ -8,7 +8,17 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score
 import numpy as np
 import os                                           # For file path operations
+import logging
 from tqdm import tqdm                               # To show a progress bar
+
+logging.basicConfig(
+    level=logging.INFO,                                                 # 
+    format='%(asctime)s - %(levelname)s - %(message)s',                 # 
+    handlers=[
+        logging.FileHandler('knn_classifier.log', encoding='utf-8'),    # 
+        logging.StreamHandler()                                         # 
+    ]
+)
 
 # Step 1: Definitions and Preparations
 def get_device():
@@ -72,6 +82,7 @@ def extract_features(dataloader, model):
 # Step 3: Main Execution Flow
 def main():
     # Main function to orchestrate all steps.
+    logging.info("Starting KNN classification process...")
 
     # Get the base directory of the script
     # Instead of using a relative path like './', we construct an absolute path based on the current script location.
@@ -85,8 +96,13 @@ def main():
     NUM_CLASSES = 2
     MODEL_PATH = os.path.join(base_dir, 'resnet18_checkpoint', 'best_resnet18_model.pth')   # Path to the model checkpoint
 
+    logging.info(f'Dataset Path: {DATASET_PATH}')
+    logging.info(f'Model Path: {MODEL_PATH}')
+    logging.info(f'Number of Classes: {NUM_CLASSES}')
+
     # 1. Load the model
     print("Loading ResNet18 feature extractor model...")
+    logging.info("Loading ResNet18 feature extrator model...")
     resnet_feature_extractor = load_pretrained_resnet18(model_path=MODEL_PATH, num_classes=NUM_CLASSES)
 
     # 2. Prepare the dataset
@@ -98,9 +114,11 @@ def main():
     ])
 
     print("Loading custom dataset...")
+    logging.info("Loading custom dataset...")
     # Load the train and validate sets using ImageFolder
     train_dataset = datasets.ImageFolder(root=f'{DATASET_PATH}/Training', transform=transform)
     test_dataset = datasets.ImageFolder(root=f'{DATASET_PATH}/Validation', transform=transform)
+    logging.info(f'Found {len(train_dataset)} training images and {len(test_dataset)} validation images.')
 
     # Create DataLoaders
     # Adjust batch_size based on your hardware's capability
@@ -109,36 +127,47 @@ def main():
 
     # 3. Extract features
     print("Extracting features from the training set...")
+    logging.info("Extracting features from the training set...")
     train_features, train_labels = extract_features(train_loader, resnet_feature_extractor)
 
     print("Extracting feature from the test set...")
+    logging.info("Extracting feature from the test set...")
     test_features, test_labels = extract_features(test_loader, resnet_feature_extractor)
 
     print(f'Feature extraction complete! Train features shape: {train_features.shape}, Test features shape: {test_features.shape}')
+    logging.info(f'Feature extraction complete! Train features shape: {train_features.shape}, Test features shape: {test_features.shape}')
 
     # 4. Train and evaluate the KNN classifier
     print("\n--- Training and Evaluating KNN Classifier ---")
+    logging.info("--- Training and Evaluating KNN Classifier ---")
 
     # Define a value for K, a key parameter for the KNN algorithm
     k_value = 5
     print(f'Using K = {k_value}')
+    logging.info(f'Using K = {k_value}')
 
     # Create an instance of the KNeighborsClassifier
     knn = KNeighborsClassifier(n_neighbors=k_value, n_jobs=-1) # n_jobs=-1 uses all available CPU cores
 
     print("Training the KNN classifier...")
+    logging.info("Training the KNN classifier...")
     # "Training" for KNN is simply memorizing the training data
     knn.fit(train_features, train_labels)
 
     print("Making predictions with the KNN classifier...")
+    logging.info("Making predictions with the KNN classifier...")
     # Make predictions on the test set
     predictions = knn.predict(test_features)
 
     # 5. Calculate and display the accuracy
     accuracy = accuracy_score(test_labels, predictions)
     print("------------------------------------------")
+    logging.info("------------------------------------------")
     print(f'KNN classifier accuracy on the test set: {accuracy * 100:.2f}%')
+    logging.info(f'FINAL RESULT: KNN classifier accuracy on the test set: {accuracy * 100:.2f}%')
     print("------------------------------------------")
+    logging.info("------------------------------------------")
+    logging.info("KNN classification process finished.")
 
 if __name__ == '__main__':
     main()
