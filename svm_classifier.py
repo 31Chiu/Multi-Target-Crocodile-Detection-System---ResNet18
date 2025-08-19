@@ -14,7 +14,7 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler('svm_training.log', encoding='utf-8'),
+        logging.FileHandler('svm_classifier.log', encoding='utf-8'),
         logging.StreamHandler()
     ]
 )
